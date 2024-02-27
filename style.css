@@ -14,8 +14,8 @@ body {
 .head_section {
   /* background-color: lightblue; */
 
-  display: flex;
   /* min-width: 100%; */
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
@@ -32,12 +32,12 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
+  padding: 0.8rem;
 }
 .content_container {
   /* background-color: lightcyan; */
 
-  padding: 10px;
+  padding: 0.8rem;
   width: 40%; /*earlier max-width*/
 }
 .content_container span {
@@ -69,22 +69,17 @@ body {
 
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-}
-.card1 img,
-.card2 img,
-.card3 img {
-  min-height: 5rem;
-  min-width: 5rem;
 }
 .card1,
 .card2,
 .card3 {
   /* background-color: lightgreen; */
 
-  max-width: 30%;
-  margin: 10px;
+  /* max-width: 30%; */
+  width: 30%;
+  margin: 0.8rem;
   display: flex;
 }
 .card1:hover,
@@ -110,8 +105,8 @@ body {
   /* background-color: lightgreen; */
 
   display: grid;
-  padding: 10px;
-  gap: 10px;
+  padding: 0.8rem;
+  gap: 0.8rem;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   grid-template-rows: repeat(3, minmax(auto, 1fr));
 }
@@ -140,7 +135,7 @@ footer {
   background-color: rgba(255, 182, 193, 0.509);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0.3rem 2rem;
   color: #565656;
 }
@@ -158,24 +153,62 @@ footer h4 {
   gap: 1rem;
 }
 
-@media only screen and (max-width: 660px) {
-}
-/*
-@media only screen and (min-width: 425px) and (max-width: 768px) {
-  .head_section,
-  .hero_section,
-  .card_container,
-  .grid_section,
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .hero_section .image_container img {
+    width: 150px;
+  }
+  .head-logo img {
+    width: 150px;
+  }
+  .menu_icon {
+    font-size: 1.5rem;
+  }
+  .content_container span {
+    padding: 0.2rem;
+  }
+  .content_container h1 {
+    font-size: 1.5rem;
+  }
+  .content_container button {
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin-top: 0.6rem;
+  }
+  .text_container h4 {
+    font-size: 1rem;
+  }
+  .text_container p {
+    font-size: 0.8rem;
+  }
+  .card {
+    margin: 0.2rem;
+  }
+  .card img {
+    width: 35px;
+  }
   footer {
-    width: 100%;
+    padding: 0.2rem 0.5rem;
+  }
+  .follow_us input {
+    width: 100px;
+  }
+  .footer-logo {
+    display: none;
   }
 }
-@media only screen and (min-width: 768px) {
-  .head_section,
-  .hero_section,
-  .card_container,
-  .grid_section,
-  footer {
-    width: 100%;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  body,
+  html {
+    font-size: 12px;
   }
-} */
+  .hero_section .image_container img {
+    width: 350px;
+  }
+  .content_container p {
+    font-size: 1rem;
+  }
+}
